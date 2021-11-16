@@ -1,2 +1,3 @@
-# clover-frontend
-Clover Website
+# Clover
+
+Clover – Startup agriculture hydroponic.
