@@ -1,8 +1,11 @@
+import { Navigation } from './components';
+import { Home } from './pages';
+
 const App = () => {
   return (
-    <>
-      <p>Horray!</p>
-    </>
+    <div>
+      <Navigation component={<Home />} />
+    </div>
   );
 };
 
