@@ -1,4 +1,6 @@
 import Logo from './assets/logo.png';
+import Shop from './assets/shop.png';
+import Location from './assets/location.png';
 
 const Navigation = (props: any) => {
   return (
@@ -9,13 +11,15 @@ const Navigation = (props: any) => {
             <img src={Logo} alt="Clover Logo" width={90} height={90} />
           </div>
           <div className="w-1/3">
-            <div className="py-2 px-2 font-primary text-xs rounded-md" style={{ backgroundColor: '#F3F8EE' }}>
+            <div className="flex py-2 px-2 font-primary text-xs rounded-md" style={{ backgroundColor: '#F3F8EE' }}>
+              <img src={Location} alt="Location" className="px-2" />
               <p style={{ color: '#ACAEAF' }}>
                 Dikirim ke <strong style={{ color: '#7AB356' }}>Pilih Alamat {'&'} Tanggal Pengiriman</strong>
               </p>
             </div>
           </div>
           <div className="flex justify-end space-x-7 w-1/3">
+            <img src={Shop} alt="Shop" />
             <button
               className="py-1 px-7 rounded-full text-white font-bold font-primary text-sm"
               style={{ backgroundColor: '#7AB356' }}
