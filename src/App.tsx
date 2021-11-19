@@ -1,11 +1,16 @@
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+
 import { Navigation } from './components';
-import { Home } from './pages';
+import { Home, Login } from './pages';
 
 const App = () => {
   return (
-    <div>
-      <Navigation component={<Home />} />
-    </div>
+    <Router>
+      <Routes>
+        <Route path ="/" element={<Navigation component={<Home />} />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </Router>
   );
 };
 

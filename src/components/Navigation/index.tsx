@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import Logo from './assets/logo.png';
 import Shop from './assets/shop.png';
 import Location from './assets/location.png';
@@ -20,12 +22,14 @@ const Navigation = (props: any) => {
           </div>
           <div className="flex justify-end space-x-7 w-1/3">
             <img src={Shop} alt="Shop" />
-            <button
-              className="py-1 px-7 rounded-full text-white font-bold font-primary text-sm"
-              style={{ backgroundColor: '#7AB356' }}
-            >
-              Login
-            </button>
+            <Link to="/login">
+              <button
+                className="py-1 px-7 rounded-full text-white font-bold font-primary text-sm"
+                style={{ backgroundColor: '#7AB356' }}
+              >
+                  Login
+              </button>
+            </Link>
             <button
               className="py-1 px-7 rounded-full font-bold font-primary text-sm"
               style={{ color: '#7AB356', borderColor: '#7AB356', borderWidth: '1px' }}
