@@ -52,7 +52,7 @@ const Login = () => {
             <p className="text-[25px] text-green-secondary font-bold">
               Masuk
             </p>
-            <a href="#" className="text-green-primary">
+            <a href="/register" className="text-green-primary">
               Daftar
             </a>
           </div>

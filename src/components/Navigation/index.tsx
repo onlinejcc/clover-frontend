@@ -30,12 +30,14 @@ const Navigation = (props: any) => {
                   Login
               </button>
             </Link>
-            <button
-              className="py-1 px-7 rounded-full font-bold font-primary text-sm"
-              style={{ color: '#7AB356', borderColor: '#7AB356', borderWidth: '1px' }}
-            >
-              Daftar
-            </button>
+            <Link to="/register">
+              <button
+                className="py-1 px-7 rounded-full font-bold font-primary text-sm"
+                style={{ color: '#7AB356', borderColor: '#7AB356', borderWidth: '1px' }}
+              >
+                Daftar
+              </button>
+            </Link>
           </div>
         </div>
       </div>
